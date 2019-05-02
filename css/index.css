@@ -357,7 +357,7 @@ ul li {
         text-align: center;
     }
 
-    /* temporary solution to push logo on top */
+    /* Not the best solution to push logo on top? */
     header nav a:nth-last-child(7) {
         order: 1;
     }
@@ -390,8 +390,6 @@ ul li {
 
     .description {
         flex-flow: column wrap;
-        /* margin-left: 20px;
-        margin-right: 20px; */
         margin-bottom: 20px;
     }
 
