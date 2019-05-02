@@ -343,12 +343,16 @@ ul li {
         display: none;
     }
 
-    header nav {
+    header {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    /* header nav {
         flex-flow: column nowrap;
         justify-content: space-evenly;
         margin-top: 10px;
         
-    }
+    } */
 
     header nav a {
         padding: 20px;
