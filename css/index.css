@@ -336,7 +336,7 @@ ul li {
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (max-device-width : 480px) {
     .container {
-        width: 100%;
+        width: 95%;
     }
 
     .right {
@@ -347,6 +347,7 @@ ul li {
         flex-flow: column nowrap;
         justify-content: space-evenly;
         margin-top: 10px;
+        
     }
 
     header nav a {
@@ -356,7 +357,7 @@ ul li {
         text-align: center;
     }
 
-    /* temporary solution to push logo on top */
+    /* Not the best solution to push logo on top? */
     header nav a:nth-last-child(7) {
         order: 1;
     }
@@ -379,17 +380,16 @@ ul li {
 
     header nav a:nth-last-child(2) {
         order: 6;
-    }
+    } 
+
 
     .left {
-        margin-right: 50px;
+        margin-right: 45px;
         margin-top: -40px;
     }
 
     .description {
         flex-flow: column wrap;
-        margin-left: 20px;
-        margin-right: 20px;
         margin-bottom: 20px;
     }
 
@@ -406,5 +406,8 @@ ul li {
     .contact{
         margin-left:20px;
     }
+<<<<<<< HEAD
     
+=======
+>>>>>>> faedb7e30ce865c2d09cf01958da236fad578ad3
 }
