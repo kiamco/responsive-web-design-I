@@ -168,9 +168,8 @@ header{
 
 header nav {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-around;
-    margin-bottom: 20px;
 }
 
 header nav a {
@@ -183,36 +182,8 @@ header nav a:hover {
 }
 
 .container {
-    width: 80%;
+    width: 50%;
     margin: 10px auto;
-}
-
-
-
-.left {
-    text-align: center;
-    line-height: 2;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-}
-
-.left h1 {
-    font-size: 500%;
-    font-weight: 400%;
-    line-height: 1;
-    padding-top: 50px;
-}
-
-
-.right {
-    padding-left: 100px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.right img {
-    max-width: 100%;
 }
 
 .middle-img,
@@ -221,120 +192,3 @@ header nav a:hover {
     margin-top: 10px;
     padding-bottom: 20px;
 }
-
-.start {
-    margin: 100px;
-}
-
-.description {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    border-top: 2px solid black;
-    padding-top: 20px;
-    margin-bottom: 20px;
-}
-
-.contact {
-    margin-top: 10px;
-}
-
-.contact address {
-    line-height: 2;
-}
-
-address .street {
-    line-height: 1.2;
-    margin-bottom: -10px;
-}
-
-footer {
-    text-align: center;
-    margin: 50px;
-}
-
-button {
-    background-color: white;
-    color: black;
-    border: 2px solid black;
-    padding: 10px 50px;
-}
-
-button:hover {
-    color: white;
-    background: #DCDCDC;
-}
-
-.column p {
-    width: 95%;
-}
-
-.column2 p {
-    width: 95%;
-}
-
-/* styles for service */
-
-.services {
-    padding-bottom: 25px;
-    border-bottom: 1px solid black;
-    margin-bottom: 25px;
-}
-
-.services h1 {
-    font-size: 150%;
-}
-
-.parent-box {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-.parent-box .boxes {
-    width: 48%;
-    padding: 20px;
-    margin-top: 20px;
-    border: 1px solid black;
-    background: #F5F5F5;
-}
-
-.boxes p {
-    line-height: 1.3;
-    margin-bottom: 15px;
-}
-
-.boxes button {
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.unboardered-box {
-    width: 48%;
-    margin-top: 20px;
-    line-height: 1.3;
-    /* padding:20px; */
-}
-
-ul {
-    margin-top: 15px;
-    line-height: 2;
-    list-style-type: square;
-    padding: 15px;
-}
-
-ul li {
-    padding-left: 1em;
-}
-
-.unboardered-box .services-info-img {
-    min-width: 100%;
-    max-height: 90%;
-}
-
-.be-flexin-center {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center
-}
-
