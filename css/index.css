@@ -159,16 +159,39 @@ h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+.container {
+    width: 65%;
+    margin: 10px auto;
+}
+
+.be-flexin-center {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center
+}
+
+header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+header img {
+    max-width: 18%;
+    height: 30px;
+}
 
 header nav {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-top: 11px;
+    margin-left: 11px;
     width: 70%;
+
 }
 
 header nav a {
@@ -180,13 +203,6 @@ header nav a:hover {
     color: black;
 }
 
-.container {
-    width: 80%;
-    margin: 10px auto;
-}
-
-
-
 .left {
     text-align: center;
     line-height: 2;
@@ -196,7 +212,7 @@ header nav a:hover {
 }
 
 .left h1 {
-    font-size: 500%;
+    font-size: 472%;
     font-weight: 400%;
     line-height: 1;
     padding-top: 50px;
@@ -209,8 +225,9 @@ header nav a:hover {
     margin-bottom: 50px;
 }
 
+
 .right img {
-    max-width: 100%;
+    min-width: 90%;
 }
 
 .middle-img,
@@ -255,7 +272,9 @@ button {
     background-color: white;
     color: black;
     border: 2px solid black;
-    padding: 10px 50px;
+    padding: 6px 42px;
+    margin-top: 9px;
+    font-size: 14px;
 }
 
 button:hover {
@@ -314,40 +333,12 @@ button:hover {
     /* padding:20px; */
 }
 
-ul {
-    margin-top: 15px;
-    line-height: 2;
-    list-style-type: square;
-    padding: 15px;
-}
-
-ul li {
-    padding-left: 1em;
-}
-
 .unboardered-box .services-info-img {
     min-width: 100%;
     max-height: 90%;
 }
 
-.be-flexin-center {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center
-}
-
-header {
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-}
-
-header .logo {
-    margin: 10px 90px 0 0;
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-device-width : 499px) {
+@media(max-device-width:800px) {
     .container {
         width: 95%;
     }
@@ -359,86 +350,91 @@ header .logo {
     header {
         flex-flow: column-reverse;
         align-items: center;
-        width: 100%;
-    }
-
-    header .logo {
-        margin: 20px -50px 0px 0px;
-    }
-
-    header nav {
-        flex-flow: column nowrap;
-        justify-content: space-evenly;
-        margin-top: 10px;
-        width: 100%;
-
-    }
-
-    header nav a {
-        padding: 20px;
-        width: 100%;
-        border-bottom: 1px solid lightgray;
-        border-top: 1px solid lightgray;
-        text-align: center;
-    }
-
-    .left {
-        margin-right: 45px;
-        margin-top: -40px;
-    }
-
-    .description {
-        flex-flow: column wrap;
-        margin-bottom: 20px;
-    }
-
-    .column p {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .column2 p {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .contact {
-        margin-left: 20px;
-    }
-
-    /* end of mobile media query */
-
-
-}
-
-@media only screen and (max-device-width : 800px) and (min-device-width : 500px) {
-    .container {
-        width: 95%;
-    }
-
-    .right {
-        display: none;
-    }
-
-    .left {
-        margin: 0px 0px 50px 0px;
-    }
-
-    header {
-        flex-flow: column-reverse;
-        align-items: center;
-
     }
 
     header nav {
         justify-content: space-between;
-        width: 95%;
+        width: 100%;
     }
 
-    header .logo {
-        margin: 25px -90px 25px 0px;
+    header img {
+        margin: 20px;
+        min-width: 21%;
     }
 
+    .left {
+        margin: 20px 0px 58px;
+        padding: 0px;
+        font-size: 13px;
+    }
+}
 
+@media(max-device-width:500px) {
+    .container {
+        width: 100%;
+        margin: 7px 0px 0px -5px;
+    }
 
+    .body-container {
+        margin: 0px auto;
+        width: 93%;
+    }
+
+    header nav {
+        flex-flow: column;
+    }
+
+    header nav a {
+        padding: 20px;
+        font-size: 24px;
+        border-bottom: 1px solid grey;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid grey;
+    }
+
+    header img {
+        min-width: 37%;
+    }
+
+    .be-flexin-center {
+        border-bottom: 2px solid black;
+        padding-bottom: 23px;
+    }
+
+    .left {
+        margin-top: 0px;
+    }
+
+    .left h1 {
+        font-size: 74px;
+    }
+
+    .description {
+        flex-flow: column;
+        font-size: 20px;
+        border-top: none;
+    }
+
+    .column {
+        margin: 43px 0px 0px;
+    }
+
+    .middle-img {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .column2 {
+        margin: 26px 0px 24px;
+    }
+
+    .contact {
+        border-top: 2px solid black;
+        font-size: 20px;
+        padding-top: 50px;
+    }
 }
