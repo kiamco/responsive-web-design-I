@@ -230,13 +230,6 @@ header nav a:hover {
     min-width: 90%;
 }
 
-@media screen and (max-width: 800px) and (min-width:500px){
-    .right img {
-        display: none;
-    }
-}
-
-
 .middle-img,
 .services-header-img {
     width: 100%;
@@ -343,4 +336,10 @@ button:hover {
 .unboardered-box .services-info-img {
     min-width: 100%;
     max-height: 90%;
+}
+
+@media(max-width:800px){
+    .right img {
+        display: none;
+    }
 }
