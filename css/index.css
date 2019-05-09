@@ -338,8 +338,86 @@ button:hover {
     max-height: 90%;
 }
 
-@media(max-width:800px){
-    .right img {
+@media(max-device-width:800px) {
+    .right {
         display: none;
+    }
+
+    header {
+        flex-flow: column-reverse;
+        align-items: center;
+    }
+
+    header nav {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    header img {
+        margin: 20px;
+        min-width: 27%;
+    }
+
+    .left {
+        margin: 20px 0px 58px;
+        padding: 0px;
+        font-size: 13px;
+    }
+}
+
+@media(max-device-width:500px) {
+    .container {
+        width: 100%;
+        margin: 7px 0px 0px -5px;
+    }
+
+    .body-container {
+        margin: 0px auto;
+        width: 93%;
+    }
+
+    header nav {
+        flex-flow: column;
+    }
+
+    header nav a {
+        padding: 20px;
+        font-size: 24px;
+        border-bottom: 1px solid grey;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav a:first-child {
+        border-top: 1px solid grey;
+    }
+
+    header img {
+        min-width: 21%;
+    }
+
+    .left{
+        margin-top:0px;
+    }
+
+    .left h1{
+        font-size: 74px;
+    }
+
+    .description{
+     flex-flow: column;
+     font-size: 31px;
+    }
+
+    .column{
+        margin: 20px 0px 20px;
+    }
+
+    .column2{
+        margin: 20px 0px 20px;
+    }
+
+    .contact{
+        font-size: 31px;
     }
 }
