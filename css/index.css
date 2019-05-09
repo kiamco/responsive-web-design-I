@@ -339,6 +339,9 @@ button:hover {
 }
 
 @media(max-device-width:800px) {
+    .container{
+        width: 95%;
+    }
     .right {
         display: none;
     }
@@ -396,28 +399,41 @@ button:hover {
         min-width: 21%;
     }
 
-    .left{
-        margin-top:0px;
+    .be-flexin-center {
+        border-bottom: 2px solid black;
+        padding-bottom: 23px;
     }
 
-    .left h1{
+    .left {
+        margin-top: 0px;
+    }
+
+    .left h1 {
         font-size: 74px;
     }
 
-    .description{
-     flex-flow: column;
-     font-size: 31px;
+    .description {
+        flex-flow: column;
+        font-size: 20px;
+        border-top: none;
     }
 
-    .column{
-        margin: 20px 0px 20px;
+    .column {
+        margin: 75px 0px 0px
     }
 
-    .column2{
-        margin: 20px 0px 20px;
+    .middle-img {
+        margin-top: 69px;
+        padding: 0;
     }
 
-    .contact{
-        font-size: 31px;
+    .column2 {
+        margin: 26px 0px 70px;
+    }
+
+    .contact {
+        border-top: 2px solid black;
+        font-size: 20px;
+        padding-top: 50px;
     }
 }
